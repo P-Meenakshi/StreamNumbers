@@ -17,13 +17,7 @@ public class NumberUtility {
      * Returns 0 if there are no even numbers or if the passed list is null
      */
     public long getEvenNumberCount(List<Integer> numbers) {
-        if(numbers == null){
-            return 0;
-        }
-
-        return numbers.stream()
-                .filter(number -> number % 2 == 0)
-                .count();
+        return -1;
     }
 
     /**
@@ -31,12 +25,7 @@ public class NumberUtility {
      * Returns empty List, is the given list is null or empty
      */
     public List<Integer> getEvenMultiplesOfThree(List<Integer> numbers) {
-        if (numbers == null) {
-            return Collections.emptyList();
-        }
-        return numbers.stream()
-                .filter(number -> number % 2 == 0 && number % 3 == 0)
-                .collect(Collectors.toList());
+        return null;
     }
 
     /**
@@ -44,14 +33,6 @@ public class NumberUtility {
      * Returns 0 if there are no odd numbers or if the passed list is null
      */
     public Integer getMaximumOfOddNumbers(List<Integer> numbers) {
-        if(numbers == null){
-            return 0;
-        }
-        final Optional<Integer> max = numbers.stream()
-                .filter(number -> number % 2 != 0)
-                .max(Comparator.comparing(Integer::intValue));
-
-        return max.orElse(0);
+        return Integer.MIN_VALUE;
     }
-
 }

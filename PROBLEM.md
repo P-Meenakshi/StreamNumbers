@@ -19,6 +19,8 @@
             - Should return maximum of odd numbers
             - Should return 0, if the input list is empty or null
 
+**NOTE: ALL THE METHODS SHOULD BE IMPLEMENTED USING STREAMS API ONLY** 
+
 ## Instructions
 - Do not change the provided class/method names unless instructed
 - Ensure your code compiles without any errors/warning/deprecations 
