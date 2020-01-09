@@ -1,6 +1,5 @@
-package com.stackroute.streams.commander.test;
+package com.stackroute.streams;
 
-import com.stackroute.streams.NumberUtility;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;
