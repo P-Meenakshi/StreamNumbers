@@ -34,13 +34,6 @@ class NumberUtilityTests {
         );
     }
 
-    private static Stream<Arguments> testDataForMaxOfOddNUmbers() {
-        return Stream.of(
-                Arguments.of(List.of(3, 6, 5, 9, 12), List.of(6, 12)),
-                Arguments.of(List.of(1, 3, 5, 8, 10), Collections.emptyList())
-        );
-    }
-
     private static Stream<Arguments> testDataForEvenNumberCount() {
         return Stream.of(
                 Arguments.of(List.of(1, 2, 3, 4, 5, 6), 3),
@@ -48,7 +41,7 @@ class NumberUtilityTests {
         );
     }
 
-    private static Stream<Arguments> inputForMaxOfOddNumbers() {
+    private static Stream<Arguments> testDataForMaxOfOddNumbers() {
         return Stream.of(
                 Arguments.of(List.of(1, 2, 3, 4, 5, 6), 5),
                 Arguments.of(List.of(2, 4, 6), 0)
@@ -90,7 +83,7 @@ class NumberUtilityTests {
     }
 
     @ParameterizedTest(name = "{0} returns {1}")
-    @MethodSource("inputForMaxOfOddNumbers")
+    @MethodSource("testDataForMaxOfOddNumbers")
     public void givenListOfIntegersThenGetMaximumOfOddNumbers(List<Integer> numbers, Integer expected) {
         assertThat(MSG_05, numberUtility.getMaximumOfOddNumbers(numbers), is(expected));
     }
