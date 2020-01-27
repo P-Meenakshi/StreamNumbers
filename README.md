@@ -9,9 +9,9 @@ Refer the problem.md file for problem description.
 
 2. **CLONE** the forked repository, containing the boilerplate in your local machine
      
-3. Navigate to exercise-td-streams-numbers folder
+3. Navigate to exercise-bt-streams-numbers folder
 
-    `cd exercise-td-streams-numbers`
+    `cd exercise-bt-streams-numbers`
 
 4. Check the status of your repository
      
