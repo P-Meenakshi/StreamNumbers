@@ -17,7 +17,7 @@ import static org.hamcrest.Matchers.is;
 class NumberUtilityTests {
 
     private static final String MSG_01 = "should return the count of even numbers";
-    private static final String MSG_02 = "should return 0 for null of empty list";
+    private static final String MSG_02 = "should return 0 for null or empty input list";
     private static final String MSG_03 = "should return list with even multiples of 3";
     private static final String MSG_04 = "should return empty list, for given null or empty list";
     private static final String MSG_05 = "should return the max of odd numbers";
